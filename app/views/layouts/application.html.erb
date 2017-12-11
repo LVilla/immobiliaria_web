@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ImmobiliariaWeb</title>
+    <title>Immobilia | Casas, Departamentos y más</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <header>
+  	<nav class="navigate">
+  		<a href=""><img src="/assets/icon.png" width="50px"> Immobilia</a>
+  		<input type="search" name="search" placeholder="Search.." width="5em">
+  		<a href="#">Sign in</a><span>or</span>
+  		<a href="#">Sign up</a>
+  	</nav>
+  </header>
   <body>
     <%= yield %>
   </body>
+  <footer>
+  	<p class="copy">@2017 Immobilia ®</p>
+  </footer>
 </html>

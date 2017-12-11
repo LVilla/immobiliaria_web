@@ -12,3 +12,38 @@
  *
  */
 @import "bootstrap";
+
+header {
+	background-color: #804015;
+	padding: 1.5em;
+
+}
+.navigate a{
+	padding: 0.5em 2em;
+	color: #fff;
+	text-transform: uppercase;  
+}
+.navigate input {
+	background: #D4956A;
+	padding: 0.5em;
+	border-radius: 0.2em;
+	border: none;
+	color: #000;
+	width: 300px;
+
+}
+.navigate a:hover{
+	text-decoration: none;
+	float: 0.3;
+
+}
+
+footer p {text-align: center;}
+
+.copy {
+	margin: 1em 1em;
+
+	color: #586069 ;
+	bottom: 0;
+	position: fixed;
+}
