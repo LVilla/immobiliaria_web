@@ -6,14 +6,33 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   </head>
   <header>
-  	<nav class="navigate">
-  		<a href=""><img src="/assets/icon.png" width="50px"> Immobilia</a>
-  		<input type="search" name="search" placeholder="Search.." width="5em">
-  		<a href="#">Sign in</a><span>or</span>
-  		<a href="#">Sign up</a>
-  	</nav>
+  	<div class="topbar">
+  		<div class="brand navg" >
+  			<a href=""><img src="/assets/icon.png" width="55px"> <span class="sitetitle">Immobilia.com</span></a>
+  		</div>
+  		<div class="navbar navg">
+  			<nav class="menu navg">
+  				<a href="#">En Arriendo</a>
+  				<a href="#">En Venta</a>
+  			</nav>
+  			<div class="m_search navg">
+  				<div class="search navg">
+  					<form class="" action="/search">
+  						<input type="text" name="search" placeholder="Buscar...">
+  					</form>
+  				</div>
+  				<nav class="navg sesion ">
+  					<a href="">Entrar</a>
+  					<span>|</span>
+  					<a href="">Registrarse</a>
+  				</nav>
+  			</div>
+  		</div>
+  	</div> 		
   </header>
   <body>
     <%= yield %>
